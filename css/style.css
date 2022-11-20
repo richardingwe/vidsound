@@ -49,7 +49,8 @@ button:focus {
   line-height: 15px;
   margin-bottom: 14px;
 }
-.form_div input {
+.form_div input,
+.form_div textarea {
   width: 100%;
   display: block;
   padding: 22px;
@@ -631,4 +632,160 @@ section._main form .submit button {
   font-weight: 400;
   font-size: 15.6806px;
   line-height: 7px;
+}
+
+section.nav_main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 46px;
+}
+section.nav_main nav {
+  width: 15%;
+}
+section.nav_main nav ul {
+  list-style: none;
+  padding-left: 26px;
+}
+section.nav_main nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  text-decoration: none;
+  width: 114.62px;
+  height: 110.64px;
+  background-color: var(--light_blue);
+  border-radius: 10px;
+  padding: 22px 33px;
+  color: var(--dark);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+}
+section.nav_main nav ul li a svg {
+  stroke: var(--dark);
+}
+section.nav_main nav ul li a.active {
+  background-color: var(--blue);
+  color: var(--light);
+}
+section.nav_main nav ul li a.active svg {
+  stroke: var(--light);
+}
+section.nav_main nav ul li:not(:last-child) {
+  margin-bottom: 28px;
+}
+section.nav_main main {
+  width: 70%;
+}
+section.nav_main main .action {
+  cursor: pointer;
+  border-radius: 9.81083px;
+  width: 100%;
+  padding: 16px 24px;
+  background: var(--light_blue);
+  border: 1px solid rgba(227, 227, 227, 0.12);
+  border-radius: 9.81083px;
+  height: 100%;
+}
+section.nav_main main .action svg {
+  margin-bottom: 10px;
+}
+section.nav_main main .action span {
+  display: block;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+}
+section.nav_main aside {
+  width: 15%;
+}
+
+section.extract_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 26, 0.81);
+  display: none;
+}
+section.extract_modal.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.extract_modal .extract_modal_body {
+  background: var(--light_blue);
+  border-radius: 10px;
+  width: 496px;
+  height: 534px;
+  padding: 36px;
+  position: relative;
+}
+section.extract_modal .extract_modal_body .close_extract_modal {
+  position: absolute;
+  border-radius: 999999999px;
+  top: 16px;
+  right: 16px;
+}
+section.extract_modal .extract_modal_body h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 137.5%;
+  text-align: center;
+  color: var(--blue);
+}
+section.extract_modal .extract_modal_body form {
+  margin-top: 28px;
+}
+section.extract_modal .extract_modal_body form .submit_button {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.extract_modal .extract_modal_body form .submit_button button {
+  background-color: var(--blue);
+  margin: 0 auto;
+  padding: 22px 44px;
+  border-radius: 5.33032px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.0022px;
+  line-height: 8px;
+  color: var(--white);
 }
