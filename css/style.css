@@ -789,3 +789,96 @@ section.extract_modal .extract_modal_body form .submit_button button {
   line-height: 8px;
   color: var(--white);
 }
+
+section.export_container {
+  width: 100%;
+  background: var(--light_blue);
+  border-radius: 10px;
+  padding: 32px 40px;
+}
+section.export_container h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+section.export_container .export_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+  gap: 15px;
+}
+section.export_container .export_options .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  border: 0.9px solid rgba(227, 227, 227, 0.12);
+  border-radius: 8.17569px;
+  padding: 16px;
+}
+section.export_container .share_container {
+  margin-top: 32px;
+}
+section.export_container .share_container .share {
+  width: 183.52px;
+  height: 85px;
+  padding: 16px;
+  background-color: var(--light_blue);
+  border: 0.8px solid var(--blue);
+  border-radius: 8px 8px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+section.export_container .share_container .share > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+section.export_container .share_container .share_options {
+  background: var(--dark_blue);
+  border-radius: 0px 0px 8px 8px;
+  padding: 22px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+section.export_container .share_container .share_options .share_option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background: var(--light_blue);
+  border: 0.5px solid rgba(227, 227, 227, 0.12);
+  border-radius: 4px;
+  padding: 9px 12px;
+}
+section.export_container .share_container .share_options .share_option img {
+  width: 26.53px;
+  height: 26.53px;
+}

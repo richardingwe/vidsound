@@ -10,7 +10,7 @@ const extractModalClose = document.querySelector('#close_extract_modal');
 const extractModalTitle = document.querySelector('#extract_modal_title');
 
 profileDropdown?.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('show');
+    dropdownMenu?.classList.toggle('show');
 });
 
 
@@ -31,16 +31,16 @@ videoTabButton?.addEventListener('click', () => {
 actions?.forEach(action => {
     action?.addEventListener('click', () => {
         extractModalTitle.innerHTML = action.getAttribute('id');
-        extractModal.classList.add('show');
+        extractModal?.classList.add('show');
     });
 });
 
-extractModal.addEventListener('click', (e) => {
+extractModal?.addEventListener('click', (e) => {
     if (e.target === extractModal) {
-        extractModal.classList.remove('show');
+        extractModal?.classList.remove('show');
     }
 });
 
 extractModalClose?.addEventListener('click', () => {
-    extractModal.classList.remove('show');
+    extractModal?.classList.remove('show');
 });
