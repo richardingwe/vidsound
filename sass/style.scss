@@ -382,10 +382,12 @@ section.create_workspace {
 			justify-content: center;
 			gap: 62px;
 
-			& > button.back {
+			& > a.back {
 				display: flex;
 				border-radius: 5.04269px;
 				align-items: center;
+				color: var(--dark);
+				text-decoration: none;
 
 				svg {
 					margin-right: 13px;

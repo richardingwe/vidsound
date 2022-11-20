@@ -405,7 +405,7 @@ section.create_workspace form .submit_buttons {
           justify-content: center;
   gap: 62px;
 }
-section.create_workspace form .submit_buttons > button.back {
+section.create_workspace form .submit_buttons > a.back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,8 +413,10 @@ section.create_workspace form .submit_buttons > button.back {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--dark);
+  text-decoration: none;
 }
-section.create_workspace form .submit_buttons > button.back svg {
+section.create_workspace form .submit_buttons > a.back svg {
   margin-right: 13px;
 }
 section.create_workspace form .submit_buttons > button.create {
