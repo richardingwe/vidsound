@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VIDSOUND</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/icons/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="left">
+				<button class="go_back">
+					<svg
+						width="32"
+						height="16"
+						viewBox="0 0 32 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M31 9C31.5523 9 32 8.55228 32 8C32 7.44772 31.5523 7 31 7V9ZM0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM31 7H1V9H31V7Z"
+							fill="#444761"
+						/>
+					</svg>
+					<span>Back to Home</span>
+				</button>
+			</div>
+			<div class="center">
+				<a class="logo" href="./index.html">
+					<img src="./assets/icons/logo.png" alt="home" />
+				</a>
+				<div class="_right">
+					<button class="workspaces">
+						<span>Workspaces</span>
+						<svg
+							width="12"
+							height="8"
+							viewBox="0 0 12 8"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5.72249 7.36293C5.46831 7.36293 5.21412 7.26929 5.01345 7.06861L0.290974 2.34614C-0.0969913 1.95817 -0.0969913 1.31602 0.290974 0.928059C0.678939 0.540094 1.32109 0.540094 1.70905 0.928059L5.72249 4.94149L9.73592 0.928059C10.1239 0.540094 10.766 0.540094 11.154 0.928059C11.542 1.31602 11.542 1.95817 11.154 2.34614L6.43153 7.06861C6.23086 7.26929 5.97667 7.36293 5.72249 7.36293Z"
+								fill="#F4F8FB"
+							/>
+						</svg>
+					</button>
+
+					<button class="notification">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M19 8C20.6569 8 22 6.65685 22 5C22 3.34315 20.6569 2 19 2C17.3431 2 16 3.34315 16 5C16 6.65685 17.3431 8 19 8Z"
+								stroke="#F76C8D"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M14 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V10"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+
+					<div class="dropdown">
+						<button
+							class="profile_dropdown _dropdown-toggle"
+							type="button"
+							id="profile_dropdown"
+							data-bs-toggle="profile_dropdown"
+							aria-expanded="false"
+						>
+							<div>
+								<img src="./assets/images/profile-image.png" alt="user" />
+							</div>
+							<svg
+								width="12"
+								height="8"
+								viewBox="0 0 12 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M5.72249 7.36293C5.46831 7.36293 5.21412 7.26929 5.01345 7.06861L0.290974 2.34614C-0.0969913 1.95817 -0.0969913 1.31602 0.290974 0.928059C0.678939 0.540094 1.32109 0.540094 1.70905 0.928059L5.72249 4.94149L9.73592 0.928059C10.1239 0.540094 10.766 0.540094 11.154 0.928059C11.542 1.31602 11.542 1.95817 11.154 2.34614L6.43153 7.06861C6.23086 7.26929 5.97667 7.36293 5.72249 7.36293Z"
+									fill="#F4F8FB"
+								/>
+							</svg>
+						</button>
+						<div class="_dropdown-menu">
+							<svg
+								class="dropdown-arrow"
+								width="14"
+								height="8"
+								viewBox="0 0 14 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M6.29289 0.707106L0.707107 6.29289C0.077142 6.92286 0.523308 8 1.41421 8H12.5858C13.4767 8 13.9229 6.92286 13.2929 6.2929L7.70711 0.707107C7.31658 0.316582 6.68342 0.316582 6.29289 0.707106Z"
+									fill="#252735"
+								/>
+							</svg>
+							<ul class="" aria-labelledby="profile_dropdown">
+								<li><a class="dropdown-item" href="#">Reseller</a></li>
+								<li><a class="dropdown-item" href="#">Agency</a></li>
+								<li>
+									<a class="dropdown-item" href="#">Custom Domain</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Settings</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Sign Out
+										<svg
+											width="34"
+											height="16"
+											viewBox="0 0 34 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M33.7071 8.70711C34.0976 8.31658 34.0976 7.68342 33.7071 7.29289L27.3431 0.928932C26.9526 0.538408 26.3195 0.538408 25.9289 0.928932C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0.5 9H33V7H0.5V9Z"
+												fill="#FF7877"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<button class="how_to">
+					<svg
+						width="24"
+						height="19"
+						viewBox="0 0 24 19"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M12.1957 9.30216L3.55178 5.84925L4.08478 18.5717H1.76739L2.32357 5.35101L0.608696 4.66738L12.1957 0.0325928L23.7826 4.66738L12.1957 9.30216ZM12.1957 3.50868C11.5584 3.50868 11.037 3.76359 11.037 4.08803C11.037 4.41246 11.5584 4.66738 12.1957 4.66738C12.8329 4.66738 13.3543 4.41246 13.3543 4.08803C13.3543 3.76359 12.8329 3.50868 12.1957 3.50868ZM12.1957 10.4609L18.6496 7.87696C19.4723 8.96614 20.04 10.2755 20.2254 11.7007C19.8778 11.6543 19.5186 11.6195 19.1478 11.6195C16.1932 11.6195 13.6093 13.207 12.1957 15.5707C10.782 13.207 8.19815 11.6195 5.24348 11.6195C4.8727 11.6195 4.5135 11.6543 4.16589 11.7007C4.35128 10.2755 4.91904 8.96614 5.74172 7.87696L12.1957 10.4609Z"
+							fill="white"
+						/>
+					</svg>
+
+					<span>How To?</span>
+				</button>
+			</div>
+		</header>
+
+		<section class="nav_main">
+			<nav>
+				<ul>
+					<li>
+						<a href="./index.html">
+							<svg
+								width="48"
+								height="48"
+								viewBox="0 0 48 48"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M38.0001 17.42L27.3341 9.12403C26.398 8.39584 25.246 8.00049 24.0601 8.00049C22.8741 8.00049 21.7221 8.39584 20.7861 9.12403L10.1181 17.42C9.47695 17.9186 8.95825 18.5571 8.60157 19.2867C8.24489 20.0164 8.05968 20.8179 8.06006 21.63V36.03C8.06006 37.0909 8.48149 38.1083 9.23163 38.8585C9.98178 39.6086 10.9992 40.03 12.0601 40.03H36.0601C37.1209 40.03 38.1383 39.6086 38.8885 38.8585C39.6386 38.1083 40.0601 37.0909 40.0601 36.03V21.63C40.0601 19.984 39.3001 18.43 38.0001 17.42Z"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M32 30C27.58 32.666 20.416 32.666 16 30"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="./extract.html">
+							<svg
+								width="37"
+								height="35"
+								viewBox="0 0 37 35"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M10.0852 17.6807L2.42554 25.3403L10.0852 33"
+									stroke-width="3.39579"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M2.42554 25.3474H17.3193"
+									stroke-width="3.39579"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M27.1067 10.8721L34.7664 18.5317L27.1067 26.1914"
+									stroke-width="3.39579"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M34.7664 18.5391H19.8726"
+									stroke-width="3.39579"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M2 15.9785V1.93579H35.1919V8.31885"
+									stroke-width="3.39579"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							Extract
+						</a>
+					</li>
+					<li>
+						<a href="./convert.html" class="active">
+							<svg
+								width="41"
+								height="41"
+								viewBox="0 0 41 41"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12.8125 14.2473H25.4542C26.9746 14.2473 28.1875 15.4773 28.1875 16.9806V20.0044"
+									stroke-width="2.5625"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M15.6996 11.3774L12.8125 14.2475L15.6996 17.1346"
+									stroke-width="2.5625"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M28.1875 26.7527H15.5458C14.0254 26.7527 12.8125 25.5227 12.8125 24.0194V20.9956"
+									stroke-width="2.5625"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M25.3004 29.6227L28.1875 26.7526L25.3004 23.8655"
+									stroke-width="2.5625"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M20.5 37.5834C29.9348 37.5834 37.5833 29.9349 37.5833 20.5001C37.5833 11.0652 29.9348 3.41675 20.5 3.41675C11.0651 3.41675 3.41663 11.0652 3.41663 20.5001C3.41663 29.9349 11.0651 37.5834 20.5 37.5834Z"
+									stroke-width="2.5625"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							Convert
+						</a>
+					</li>
+					<li>
+						<a href="./export.html">
+							<svg
+								width="38"
+								height="38"
+								viewBox="0 0 38 38"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20.5834 17.4167L33.5667 4.43335"
+									stroke-width="2.375"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M34.8334 10.7667V3.16675H27.2334"
+									stroke-width="2.375"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M17.4166 3.16675H14.25C6.33329 3.16675 3.16663 6.33341 3.16663 14.2501V23.7501C3.16663 31.6667 6.33329 34.8334 14.25 34.8334H23.75C31.6666 34.8334 34.8333 31.6667 34.8333 23.7501V20.5834"
+									stroke-width="2.375"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							Export
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<main></main>
+			<aside></aside>
+		</section>
+	</body>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"
+	></script>
+	<script src="./js/script.js"></script>
+</html>
