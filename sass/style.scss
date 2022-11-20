@@ -9,8 +9,9 @@
 :root {
 	--dark_blue: #171821;
 	--light_blue: #1d1e27;
-	--lighter_blue: var(--lig);
+	--lighter_blue: #252735;
 	--light: #f4f8fb;
+	--blue: #4c6efb;
 	--dark: #444761;
 	--red: #ff7877;
 	--white: #ffffff;
@@ -35,12 +36,41 @@ button {
 	}
 }
 
+.form_div {
+	label {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14.6858px;
+		line-height: 15px;
+		margin-bottom: 14px;
+	}
+
+	input {
+		width: 100%;
+		display: block;
+		padding: 22px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		background: #171821;
+		border: 1.04899px solid rgba(235, 235, 235, 0.07);
+		box-shadow: 0px 0px 41.9595px -16.7838px rgba(0, 0, 0, 0.1);
+		border-radius: 5.24494px;
+
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14.6858px;
+		line-height: 15px;
+		color: var(--light);
+	}
+}
+
 ._dropdown-menu {
 	display: none;
 	position: absolute;
 	right: -16px;
 	background-color: var(--lighter_blue);
-	box-shadow: 0px 9px 100px -8px rgba(0, 0, 0, 0.2);
+	// box-shadow: 0px 9px 100px -8px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	margin-top: 6px;
 
@@ -235,6 +265,76 @@ section.workspaces_section {
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 28px;
+		}
+	}
+}
+
+section.create_workspace {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 80px;
+	background: var(--light_blue);
+	border-radius: 20px;
+	padding: 61px 0;
+
+	h1 {
+		text-align: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 137.5%;
+		color: var(--white);
+		margin-bottom: 50px;
+	}
+
+	form {
+		width: 100%;
+		max-width: 657px;
+		margin: 0 auto;
+
+		button.add_team {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14.6858px;
+			line-height: 15px;
+			color: var(--blue) !important;
+			margin-top: 44px;
+			margin-bottom: 26px;
+
+			span {
+				margin-left: 5px;
+			}
+		}
+
+		.submit_buttons {
+			margin-top: 62px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 62px;
+
+			& > button.back {
+				display: flex;
+				border-radius: 5.04269px;
+				align-items: center;
+
+				svg {
+					margin-right: 13px;
+				}
+			}
+
+			& > button.create {
+				display: flex;
+				align-items: center;
+				background-color: var(--blue);
+				padding: 19px 42px;
+				border-radius: 5.04269px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14.8345px;
+				line-height: 7px;
+				color: var(--white) !important;
+			}
 		}
 	}
 }

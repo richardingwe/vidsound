@@ -178,25 +178,64 @@
 			</div>
 		</header>
 
-		<section class="workspaces_section">
-			<a href="">
-				<button class="create_workspace_button">
-					<svg
-						width="100"
-						height="100"
-						viewBox="0 0 100 100"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<circle cx="50" cy="50" r="50" fill="#4C70FF" />
-						<path
-							d="M50 30.9528C50.6315 30.9528 51.2371 31.2036 51.6836 31.6501C52.1301 32.0966 52.381 32.7022 52.381 33.3337V47.6194H66.6667C67.2981 47.6194 67.9038 47.8703 68.3503 48.3168C68.7968 48.7633 69.0476 49.3689 69.0476 50.0004C69.0476 50.6318 68.7968 51.2374 68.3503 51.684C67.9038 52.1305 67.2981 52.3813 66.6667 52.3813H52.381V66.667C52.381 67.2985 52.1301 67.9041 51.6836 68.3506C51.2371 68.7971 50.6315 69.048 50 69.048C49.3685 69.048 48.7629 68.7971 48.3164 68.3506C47.8699 67.9041 47.6191 67.2985 47.6191 66.667V52.3813H33.3333C32.7019 52.3813 32.0963 52.1305 31.6498 51.684C31.2032 51.2374 30.9524 50.6318 30.9524 50.0004C30.9524 49.3689 31.2032 48.7633 31.6498 48.3168C32.0963 47.8703 32.7019 47.6194 33.3333 47.6194H47.6191V33.3337C47.6191 32.7022 47.8699 32.0966 48.3164 31.6501C48.7629 31.2036 49.3685 30.9528 50 30.9528Z"
-							fill="white"
-						/>
-					</svg>
-					<div>Create Workspace</div>
-				</button>
-			</a>
+		<section class="create_workspace">
+			<h1>Create Workspace</h1>
+
+			<form action="">
+				<div class="form_div">
+					<label for="workspace_name">Workspace Name</label>
+					<input
+						type="text"
+						name="workspace_name"
+						id="workspace_name"
+						placeholder="Enter Workspace Name"
+						required
+					/>
+				</div>
+				<button type="button" class="add_team">Add Team <span>+</span></button>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form_div">
+							<input
+								type="email"
+								name="tean_email_address"
+								id="tean_email_address"
+								required
+								placeholder="Team email address"
+							/>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form_div">
+							<input
+								type="email"
+								name="tean_email_address"
+								required
+								id="tean_email_address"
+								placeholder="Team email address"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="submit_buttons">
+					<button type="button" class="back">
+						<svg
+							width="39"
+							height="15"
+							viewBox="0 0 39 15"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M38 8.5C38.5523 8.5 39 8.05228 39 7.5C39 6.94772 38.5523 6.5 38 6.5V8.5ZM0.292893 6.79289C-0.0976311 7.18342 -0.0976311 7.81658 0.292893 8.20711L6.65685 14.5711C7.04738 14.9616 7.68054 14.9616 8.07107 14.5711C8.46159 14.1805 8.46159 13.5474 8.07107 13.1569L2.41421 7.5L8.07107 1.84315C8.46159 1.45262 8.46159 0.819457 8.07107 0.428932C7.68054 0.0384078 7.04738 0.0384078 6.65685 0.428932L0.292893 6.79289ZM38 6.5H1V8.5H38V6.5Z"
+								fill="#6C6F92"
+							/>
+						</svg>
+						Back
+					</button>
+					<button type="submit" class="create">Create Studio</button>
+				</div>
+			</form>
 		</section>
 	</body>
 	<script
