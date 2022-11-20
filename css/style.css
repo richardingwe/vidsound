@@ -10,7 +10,7 @@
 :root {
   --dark_blue: #171821;
   --light_blue: #1d1e27;
-  --lighter_blue: #252735;
+  --lighter_blue: var(--lig);
   --light: #f4f8fb;
   --dark: #444761;
   --red: #ff7877;
@@ -239,4 +239,24 @@ header .right button.how_to span {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+}
+
+section.workspaces_section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 52px;
+}
+section.workspaces_section button.create_workspace_button svg {
+  margin-bottom: 20px;
+}
+section.workspaces_section button.create_workspace_button div {
+  padding: 5px 14px;
+  background-color: #252735;
+  -webkit-box-shadow: 0px 12.5273px 48.1818px -8.67273px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 12.5273px 48.1818px -8.67273px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
 }
