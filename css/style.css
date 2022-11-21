@@ -694,6 +694,10 @@ section.nav_main nav ul li:not(:last-child) {
 section.nav_main main {
   width: 70%;
 }
+section.nav_main main.main_long {
+  width: 85%;
+  margin-right: 64px;
+}
 section.nav_main main .action {
   cursor: pointer;
   border-radius: 9.81083px;
@@ -1095,4 +1099,223 @@ section.audio_blog .blog_post .blog_image img {
   font-size: 16px;
   line-height: 13px;
   color: #f76c8d;
+}
+
+section.convert_container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.convert_container .top .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--dark);
+}
+section.convert_container .top .title svg {
+  margin-right: 16px;
+}
+section.convert_container .top .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 22px;
+}
+section.convert_container .top .group button.a_i_paraphrase {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(76, 110, 251, 0.12);
+  border: 0.5px solid rgba(227, 227, 227, 0.12);
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+section.convert_container .top .group button.a_i_paraphrase img {
+  width: 25.61px;
+  height: 25.61px;
+}
+section.convert_container .top .group .action_dropdown {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 13px 50px -9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 13px 50px -9px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #3abc29;
+  padding: 8px 18px;
+  width: 123px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("/assets/images/green-caret.png") no-repeat right 0.8em center/1em, rgba(58, 188, 41, 0.168627451);
+  cursor: pointer;
+}
+section.convert_container .top button.export {
+  padding: 13px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  border: 1px solid var(--blue);
+  -webkit-box-shadow: 0px 13px 50px -9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 13px 50px -9px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  color: var(--blue) !important;
+}
+section.convert_container .center {
+  margin-top: 20px;
+}
+section.convert_container .center .left {
+  background: var(--light_blue);
+  border-radius: 10px;
+  padding: 50px 65px;
+  position: relative;
+}
+section.convert_container .center .left .blue_arrow {
+  position: absolute;
+  top: 28px;
+  right: -18px;
+}
+section.convert_container .center .left .line {
+  position: absolute;
+  top: 90px;
+  right: 6px;
+}
+section.convert_container .center .left .photo_input {
+  background: #21222c;
+  border: 0.5px solid rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0px 29.1043px 81.492px -6.29603px rgba(23, 24, 32, 0.5);
+          box-shadow: 0px 29.1043px 81.492px -6.29603px rgba(23, 24, 32, 0.5);
+  border-radius: 8px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+section.convert_container .center .left .photo_input input {
+  width: 80%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.1661px;
+  line-height: 13px;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+section.convert_container .center .left .photo_input img {
+  width: 41.51px;
+  height: 41.51px;
+}
+section.convert_container .center .left .photo_input .play {
+  margin-right: 30px;
+}
+section.convert_container .center .left .controls {
+  background: #21222c;
+  border: 0.5px solid rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0px 29.1043px 81.492px -6.29603px rgba(23, 24, 32, 0.5);
+          box-shadow: 0px 29.1043px 81.492px -6.29603px rgba(23, 24, 32, 0.5);
+  border-radius: 8px;
+  padding: 14px;
+}
+section.convert_container .center .left .controls .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.convert_container .center .left .controls .top > .photo_dropdown {
+  border: 1px solid rgba(68, 71, 97, 0.4);
+  border-radius: 41.5775px;
+  padding: 2.5px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.1661px;
+  line-height: 13px;
+  margin-right: 10px;
+}
+section.convert_container .center .left .controls .top > .photo_dropdown img {
+  width: 42.27px;
+  height: 42.27px;
+  margin-right: 12px;
+}
+section.convert_container .center .left .controls .top > .photo_dropdown svg {
+  margin-left: 20px;
+}
+section.convert_container .center .left .controls .top > .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-top: 0;
+}
+section.convert_container .center .left .controls .top > .center .outline {
+  padding: 14px 16px;
+  border: 1px solid rgba(68, 71, 97, 0.4);
+  border-radius: 35.7643px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.1854px;
+  line-height: 11px;
+  color: var(--white);
+}
+section.convert_container .center .left .controls .top > .time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.1661px;
+  line-height: 13px;
+  color: var(--dark);
+  margin-left: 30px;
+}
+section.convert_container .center .right {
+  background: var(--light_blue);
+  border-radius: 10px;
+  padding: 25px;
 }

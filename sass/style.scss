@@ -646,6 +646,11 @@ section.nav_main {
 	main {
 		width: 70%;
 
+		&.main_long {
+			width: 85%;
+			margin-right: 64px;
+		}
+
 		.action {
 			cursor: pointer;
 			border-radius: 9.81083px;
@@ -1014,6 +1019,211 @@ section.audio_blog {
 			font-size: 16px;
 			line-height: 13px;
 			color: #f76c8d;
+		}
+	}
+}
+
+section.convert_container {
+	.top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.title {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 28px;
+			color: var(--dark);
+
+			svg {
+				margin-right: 16px;
+			}
+		}
+
+		.group {
+			display: flex;
+			align-items: center;
+			gap: 22px;
+
+			button.a_i_paraphrase {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				background: rgba(76, 110, 251, 0.12);
+				border: 0.5px solid rgba(227, 227, 227, 0.12);
+				border-radius: 10px;
+				padding: 10px 14px;
+				display: flex;
+				align-items: center;
+				gap: 8px;
+
+				img {
+					width: 25.61px;
+					height: 25.61px;
+				}
+			}
+
+			.action_dropdown {
+				border: none;
+				outline: none;
+				box-shadow: 0px 13px 50px -9px rgba(0, 0, 0, 0.2);
+				border-radius: 10px;
+				color: #3abc29;
+				padding: 8px 18px;
+				width: 123px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 29px;
+				appearance: none;
+				background: url("/assets/images/green-caret.png") no-repeat right 0.8em
+						center / 1em,
+					#3abc292b;
+				cursor: pointer;
+			}
+		}
+
+		button.export {
+			padding: 13px 14px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			border: 1px solid var(--blue);
+			box-shadow: 0px 13px 50px -9px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 29px;
+			color: var(--blue) !important;
+		}
+	}
+
+	.center {
+		margin-top: 20px;
+
+		.left {
+			background: var(--light_blue);
+			border-radius: 10px;
+			padding: 50px 65px;
+			position: relative;
+
+			.blue_arrow {
+				position: absolute;
+				top: 28px;
+				right: -18px;
+			}
+
+			.line {
+				position: absolute;
+				top: 90px;
+				right: 6px;
+			}
+
+			.photo_input {
+				background: #21222c;
+				border: 0.5px solid rgba(255, 255, 255, 0.05);
+				box-shadow: 0px 29.1043px 81.492px -6.29603px rgba(23, 24, 32, 0.5);
+				border-radius: 8px;
+				padding: 16px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 30px;
+
+				input {
+					width: 80%;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14.1661px;
+					line-height: 13px;
+					color: var(--white);
+					background-color: transparent;
+					border: none;
+					outline: none;
+				}
+
+				img {
+					width: 41.51px;
+					height: 41.51px;
+				}
+
+				.play {
+					margin-right: 30px;
+				}
+			}
+
+			.controls {
+				background: #21222c;
+				border: 0.5px solid rgba(255, 255, 255, 0.05);
+				box-shadow: 0px 29.1043px 81.492px -6.29603px rgba(23, 24, 32, 0.5);
+				border-radius: 8px;
+				padding: 14px;
+
+				.top {
+					display: flex;
+					align-items: center;
+
+					& > .photo_dropdown {
+						border: 1px solid rgba(68, 71, 97, 0.4);
+						border-radius: 41.5775px;
+						padding: 2.5px;
+						padding-right: 20px;
+						display: flex;
+						align-items: center;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14.1661px;
+						line-height: 13px;
+						margin-right: 10px;
+
+						img {
+							width: 42.27px;
+							height: 42.27px;
+							margin-right: 12px;
+						}
+
+						svg {
+							margin-left: 20px;
+						}
+					}
+
+					& > .center {
+						display: flex;
+						align-items: center;
+						gap: 8px;
+						margin-top: 0;
+
+						.outline {
+							padding: 14px 16px;
+							border: 1px solid rgba(68, 71, 97, 0.4);
+							border-radius: 35.7643px;
+							font-style: normal;
+							font-weight: 400;
+							font-size: 12.1854px;
+							line-height: 11px;
+							color: var(--white);
+						}
+					}
+
+					& > .time {
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14.1661px;
+						line-height: 13px;
+						color: var(--dark);
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+
+		.right {
+			background: var(--light_blue);
+			border-radius: 10px;
+			padding: 25px;
 		}
 	}
 }
