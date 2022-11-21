@@ -1078,7 +1078,7 @@ section.convert_container {
 				font-size: 15px;
 				line-height: 29px;
 				appearance: none;
-				background: url("/assets/images/green-caret.png") no-repeat right 0.8em
+				background: url(/assets/images/green-caret.png) no-repeat right 0.8em
 						center / 1em,
 					#3abc292b;
 				cursor: pointer;
@@ -1086,7 +1086,7 @@ section.convert_container {
 		}
 
 		button.export {
-			padding: 13px 14px;
+			padding: 12px 14px;
 			display: flex;
 			align-items: center;
 			gap: 12px;

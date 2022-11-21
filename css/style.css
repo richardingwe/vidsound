@@ -1168,11 +1168,11 @@ section.convert_container .top .group .action_dropdown {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/assets/images/green-caret.png") no-repeat right 0.8em center/1em, rgba(58, 188, 41, 0.168627451);
+  background: url(/assets/images/green-caret.png) no-repeat right 0.8em center/1em, rgba(58, 188, 41, 0.168627451);
   cursor: pointer;
 }
 section.convert_container .top button.export {
-  padding: 13px 14px;
+  padding: 12px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
