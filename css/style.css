@@ -37,6 +37,10 @@ button:focus {
   outline: 3px solid #f4f8fb !important;
 }
 
+.h-full {
+  height: 100% !important;
+}
+
 .dashed-blue {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%233772FFFF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
   border-radius: 10px;
@@ -1192,6 +1196,7 @@ section.convert_container .top button.export {
 }
 section.convert_container .center {
   margin-top: 20px;
+  height: 100%;
 }
 section.convert_container .center .left {
   background: var(--light_blue);
@@ -1202,7 +1207,7 @@ section.convert_container .center .left {
 section.convert_container .center .left .blue_arrow {
   position: absolute;
   top: 28px;
-  right: -18px;
+  right: -23px;
 }
 section.convert_container .center .left .line {
   position: absolute;
@@ -1314,8 +1319,90 @@ section.convert_container .center .left .controls .top > .time {
   color: var(--dark);
   margin-left: 30px;
 }
+section.convert_container .center .left .controls .bottom {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+}
+section.convert_container .center .left .controls .bottom > div.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+section.convert_container .center .left .controls .bottom > div.group > p {
+  width: 100%;
+  max-width: 427px;
+  margin: 0;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+section.convert_container .center .left .controls .red_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 18px;
+  margin-right: 111px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+section.convert_container .center .left .add_a_block_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 43px;
+}
+section.convert_container .center .left .add_a_block_container > button {
+  border: 1px solid #4c6efb;
+  -webkit-box-shadow: 0px 10px 42px -7.58518px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 42px -7.58518px rgba(0, 0, 0, 0.2);
+  border-radius: 8.5px;
+  padding: 12px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 24px;
+  color: var(--blue) !important;
+}
+section.convert_container .center .left .add_a_block_container > button svg {
+  margin-right: 8px;
+}
 section.convert_container .center .right {
   background: var(--light_blue);
   border-radius: 10px;
   padding: 25px;
+  height: 100%;
+}
+section.convert_container .center .right .video {
+  width: 100%;
+  border-radius: 11px;
+  overflow: hidden;
+  position: relative;
+}
+section.convert_container .center .right .video img {
+  width: 100%;
+}
+section.convert_container .center .right .video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
 }
