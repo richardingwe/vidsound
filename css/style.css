@@ -1268,6 +1268,7 @@ section.convert_container .center .left .controls .top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 section.convert_container .center .left .controls .top > .photo_dropdown {
   border: 1px solid rgba(68, 71, 97, 0.4);
@@ -1321,6 +1322,100 @@ section.convert_container .center .left .controls .top > .time {
   line-height: 13px;
   color: var(--dark);
   margin-left: 30px;
+}
+section.convert_container .center .left .controls .top .options {
+  background: var(--light_blue);
+  border: 0.5px solid rgba(255, 255, 255, 0.16);
+  -webkit-box-shadow: 0px 20px 150px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 150px rgba(0, 0, 0, 0.4);
+  border-radius: 9.7235px;
+  position: absolute;
+  top: 35px;
+  right: -100px;
+  z-index: 99999;
+  display: none;
+}
+section.convert_container .center .left .controls .top .options.show {
+  display: block;
+}
+section.convert_container .center .left .controls .top .options ._top {
+  padding: 24px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.11);
+}
+section.convert_container .center .left .controls .top .options ._top button._row {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+section.convert_container .center .left .controls .top .options ._top button._row .box_container {
+  width: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.convert_container .center .left .controls .top .options ._top button._row .box_container .box {
+  background: var(--lighter_blue);
+  border: 0.8px solid rgba(235, 235, 235, 0.07);
+  -webkit-box-shadow: 0px 0px 29.727px -11.8908px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 29.727px -11.8908px rgba(0, 0, 0, 0.1);
+  border-radius: 3.7px;
+}
+section.convert_container .center .left .controls .top .options ._bottom {
+  padding: 20px;
+}
+section.convert_container .center .left .controls .top .options ._bottom .c_r {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.7507px;
+  line-height: 7px;
+  color: var(--white);
+}
+section.convert_container .center .left .controls .top .options ._bottom form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 7px;
+  color: var(--white);
+}
+section.convert_container .center .left .controls .top .options ._bottom form input {
+  padding: 13px 14px;
+  background-color: var(--lighter_blue);
+  border-radius: 3.77784px;
+  outline: none;
+  border: none;
+  width: 100px;
+}
+section.convert_container .center .left .controls .top .options ._bottom form button {
+  padding: 20px;
+  background-color: var(--blue);
+  border-radius: 3.77784px;
 }
 section.convert_container .center .left .controls .bottom {
   margin-top: 18px;

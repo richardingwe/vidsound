@@ -1171,6 +1171,7 @@ section.convert_container {
 				.top {
 					display: flex;
 					align-items: center;
+					position: relative;
 
 					& > .photo_dropdown {
 						border: 1px solid rgba(68, 71, 97, 0.4);
@@ -1221,6 +1222,91 @@ section.convert_container {
 						line-height: 13px;
 						color: var(--dark);
 						margin-left: 30px;
+					}
+
+					.options {
+						background: var(--light_blue);
+						border: 0.5px solid rgba(255, 255, 255, 0.16);
+						box-shadow: 0px 20px 150px rgba(0, 0, 0, 0.4);
+						border-radius: 9.7235px;
+						position: absolute;
+						top: 35px;
+						right: -100px;
+						z-index: 99999;
+						display: none;
+
+						&.show {
+							display: block;
+						}
+
+						._top {
+							padding: 24px 28px;
+							display: flex;
+							flex-direction: column;
+							gap: 20px;
+							border-bottom: 0.5px solid rgba(255, 255, 255, 0.11);
+
+							button._row {
+								font-style: normal;
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 14px;
+								display: flex;
+								align-items: center;
+								gap: 15px;
+
+								.box_container {
+									width: 46px;
+									display: flex;
+									justify-content: center;
+									.box {
+										background: var(--lighter_blue);
+										border: 0.8px solid rgba(235, 235, 235, 0.07);
+										box-shadow: 0px 0px 29.727px -11.8908px rgba(0, 0, 0, 0.1);
+										border-radius: 3.7px;
+									}
+								}
+							}
+						}
+
+						._bottom {
+							padding: 20px;
+
+							.c_r {
+								font-style: normal;
+								font-weight: 400;
+								font-size: 13.7507px;
+								line-height: 7px;
+								color: var(--white);
+							}
+
+							form {
+								display: flex;
+								margin-top: 20px;
+								align-items: center;
+								gap: 8px;
+								font-style: normal;
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 7px;
+								color: var(--white);
+
+								input {
+									padding: 13px 14px;
+									background-color: var(--lighter_blue);
+									border-radius: 3.77784px;
+									outline: none;
+									border: none;
+									width: 100px;
+								}
+
+								button {
+									padding: 20px;
+									background-color: var(--blue);
+									border-radius: 3.77784px;
+								}
+							}
+						}
 					}
 				}
 
