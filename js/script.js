@@ -10,6 +10,8 @@ const extractModalClose = document.querySelector('#close_extract_modal');
 const extractModalTitle = document.querySelector('#extract_modal_title');
 const optionsButton = document.querySelector('#options_button');
 const convertOptions = document.querySelector('#convert_options');
+const exportButton = document.querySelector('#export');
+const convertModal = document.querySelector('#convert_modal');
 
 profileDropdown?.addEventListener('click', () => {
     dropdownMenu?.classList.toggle('show');
@@ -49,5 +51,15 @@ extractModalClose?.addEventListener('click', () => {
 
 optionsButton?.addEventListener('click', () => {
     convertOptions?.classList.toggle('show');
+});
+
+exportButton?.addEventListener('click', () => {
+    convertModal.classList.add('show');
+});
+
+convertModal?.addEventListener('click', (e) => {
+    if (e.target === convertModal) {
+        convertModal?.classList.remove('show');
+    }
 });
 

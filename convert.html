@@ -367,7 +367,7 @@
 								<option value="Editing">Editing</option>
 							</select>
 						</div>
-						<button class="export">
+						<button class="export" id="export">
 							<svg
 								width="20"
 								height="20"
@@ -1115,6 +1115,1208 @@
 					</section>
 				</section>
 			</main>
+		</section>
+		<section id="convert_modal" class="convert_modal">
+			<div class="convert_modal_body">
+				<div class="main">
+					<div class="buttons">
+						<button class="stock_music">
+							<svg
+								width="29"
+								height="29"
+								viewBox="0 0 29 29"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M25.242 6.25903V19.9132C25.242 22.3057 23.2966 24.2511 20.9041 24.2511C18.5236 24.2511 16.5661 22.3057 16.5661 19.9132C16.5661 17.5328 18.5236 15.5874 20.9041 15.5874C21.9191 15.5874 22.8253 15.9378 23.5624 16.5178V9.32819L12.4336 12.494V22.2453C12.4336 24.6378 10.4761 26.5832 8.09573 26.5832C5.70323 26.5832 3.75781 24.6378 3.75781 22.2453C3.75781 19.8649 5.70323 17.9194 8.09573 17.9194C9.09865 17.9194 10.0049 18.2699 10.742 18.8378V8.15611C10.742 6.37986 11.8174 5.00236 13.5211 4.54319L20.5053 2.63403C21.9191 2.24736 23.1153 2.38028 23.9611 3.03278C24.8191 3.67319 25.242 4.76069 25.242 6.25903Z"
+									fill="#4C6EFB"
+								/>
+							</svg>
+							Stock Music
+						</button>
+						<button class="upload">
+							<svg
+								width="32"
+								height="31"
+								viewBox="0 0 32 31"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M25.3129 19.3876C23.905 19.2971 22.4583 19.8138 21.3862 20.8859C19.3713 22.9009 19.3713 26.1688 21.3862 28.1967C22.0708 28.8813 22.9104 29.3334 23.8017 29.553C24.2925 29.6821 24.8092 29.7209 25.3258 29.6951C26.5529 29.6434 27.7542 29.1526 28.6971 28.2096C30.0275 26.8792 30.4796 25.0063 30.0533 23.3142C29.8467 22.423 29.3817 21.5834 28.6971 20.8988C27.7671 19.9559 26.5529 19.4521 25.3129 19.3876ZM27.935 24.5155C27.935 24.7867 27.8317 25.0192 27.6508 25.2001C27.47 25.3809 27.2375 25.4842 26.9662 25.4842H26.0104V26.4917C26.0104 26.763 25.9071 26.9955 25.7263 27.1763C25.5454 27.3571 25.3129 27.4605 25.0417 27.4605C24.5121 27.4605 24.0729 27.0213 24.0729 26.4917V25.4842H23.1042C22.5746 25.4842 22.1354 25.0451 22.1354 24.5155C22.1354 23.9859 22.5746 23.5467 23.1042 23.5467H24.0729V22.6296C24.0729 22.1001 24.5121 21.6609 25.0417 21.6609C25.5712 21.6609 26.0104 22.1001 26.0104 22.6296V23.5467H26.9662C27.5087 23.5467 27.935 23.9859 27.935 24.5155Z"
+									fill="#444761"
+								/>
+								<path
+									d="M16.2976 15.5901C15.768 15.5901 15.3418 16.0163 15.3418 16.5459C15.3418 17.0755 15.768 17.5018 16.2976 17.5018C16.8272 17.5018 17.2535 17.0755 17.2535 16.5459C17.2535 16.0163 16.8272 15.5901 16.2976 15.5901Z"
+									fill="#444761"
+								/>
+								<path
+									d="M9.23171 16.8691C8.70213 16.8691 8.27588 17.2954 8.27588 17.825C8.27588 18.3546 8.70213 18.7808 9.23171 18.7808C9.7613 18.7808 10.1875 18.3546 10.1875 17.825C10.1875 17.2954 9.7613 16.8691 9.23171 16.8691Z"
+									fill="#444761"
+								/>
+								<path
+									d="M21.4122 2.58325H10.5881C10.2264 2.58325 9.87766 2.59617 9.54183 2.64784C5.47308 3.02242 3.0835 5.74784 3.0835 10.0878V20.912C3.0835 25.252 5.47308 27.9774 9.54183 28.352C9.87766 28.4037 10.2264 28.4166 10.5881 28.4166H17.9377C18.4414 28.4166 18.7643 27.8483 18.5706 27.3833C18.196 26.492 17.9377 25.4587 17.9377 24.5416C17.9377 20.6278 21.1281 17.4374 25.0418 17.4374C26.0235 17.4374 26.9793 17.6312 27.8577 18.0187C28.3356 18.2253 28.9168 17.9024 28.9168 17.3858V10.0878C28.9168 5.38617 26.1139 2.58325 21.4122 2.58325ZM19.2035 10.3978V16.5462C19.2035 16.5591 19.1906 16.572 19.1906 16.5978C19.1647 18.1737 17.886 19.4524 16.2972 19.4524C14.6956 19.4524 13.4039 18.1478 13.4039 16.5591C13.4039 14.9574 14.7085 13.6658 16.2972 13.6658C16.6331 13.6658 16.956 13.7303 17.266 13.8466V11.6637L12.1381 13.0587V17.8378C12.1381 17.8508 12.1252 17.8637 12.1252 17.8766C12.0993 19.4524 10.8206 20.7183 9.23183 20.7183C7.63016 20.7183 6.3385 19.4137 6.3385 17.8249C6.3385 16.2362 7.64308 14.9316 9.23183 14.9316C9.56766 14.9316 9.89058 14.9962 10.1877 15.1124V12.3224V10.062C10.1877 8.86075 10.9368 7.892 12.0864 7.582L15.9356 6.52284C17.1368 6.19992 17.8731 6.52284 18.2864 6.83284C18.8806 7.28492 19.1777 8.02117 19.1777 9.00284V10.3978H19.2035Z"
+									fill="#444761"
+								/>
+							</svg>
+
+							Upload
+						</button>
+					</div>
+					<hr class="hr" style="background-color: #444761" />
+					<div class="row">
+						<div class="col-4">
+							<div class="filter_container">
+								<div class="header">
+									<div>Filter</div>
+									<button>Clear All</button>
+								</div>
+								<div class="body">
+									<div class="dropdown">
+										Charastaristics
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown">
+										Genre
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown">
+										Instruments
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown">
+										Mood
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown">
+										Energy
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown">
+										Vocals
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown">
+										BPM
+										<button>
+											<svg
+												width="14"
+												height="8"
+												viewBox="0 0 14 8"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1 1L7 7L13 1"
+													stroke="#C1C1C1"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-8">
+							<div class="search">
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M17.8581 16.3312L12.6509 11.1231C13.49 9.9699 13.9414 8.58008 13.9401 7.15388C13.9401 3.42093 10.9029 0.383789 7.16999 0.383789C3.43704 0.383789 0.399902 3.42093 0.399902 7.15388C0.399902 10.8868 3.43704 13.924 7.16999 13.924C8.59619 13.9253 9.98602 13.4739 11.1392 12.6347L16.3473 17.842L17.8581 16.3312ZM7.16999 11.7858C6.25377 11.7858 5.35811 11.5142 4.59626 11.0052C3.83442 10.4963 3.24062 9.77281 2.88997 8.92635C2.53931 8.07989 2.44754 7.14846 2.62626 6.24984C2.80498 5.35123 3.24618 4.52579 3.89404 3.87793C4.5419 3.23006 5.36734 2.78887 6.26596 2.61015C7.16457 2.43142 8.09601 2.52319 8.94247 2.87385C9.78893 3.22451 10.5124 3.81831 11.0214 4.58015C11.5303 5.34199 11.8019 6.23766 11.8019 7.15388C11.8004 8.38188 11.312 9.55918 10.4436 10.4275C9.57529 11.2958 8.398 11.7843 7.16999 11.7858Z"
+										fill="#F4F8FB"
+									/>
+								</svg>
+								<input
+									type="search"
+									name="search"
+									placeholder="Search Input"
+									id="search"
+								/>
+							</div>
+							<div class="playlist">
+								<div class="media">
+									<div class="left">
+										<div class="photo">
+											<img src="./assets/images/profile-image-3.png" alt="" />
+										</div>
+										<div class="details">
+											<div class="top">Going Shoping again(..</div>
+											<div class="bottom">Dresdeon, the casamigos</div>
+										</div>
+									</div>
+									<div class="center">
+										<button>
+											<svg
+												width="13"
+												height="14"
+												viewBox="0 0 13 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.8629 13.8202C1.63869 13.8198 1.41844 13.761 1.22383 13.6496C0.785611 13.4013 0.513184 12.9193 0.513184 12.396V1.80563C0.513184 1.28086 0.785611 0.800278 1.22383 0.551953C1.42308 0.437445 1.64942 0.378558 1.87921 0.381449C2.109 0.38434 2.33379 0.448902 2.5301 0.568386L11.5812 5.98626C11.7698 6.10454 11.9253 6.26879 12.0331 6.4636C12.1409 6.65842 12.1974 6.87742 12.1974 7.10007C12.1974 7.32272 12.1409 7.54172 12.0331 7.73653C11.9253 7.93135 11.7698 8.0956 11.5812 8.21388L2.52863 13.6332C2.32774 13.7547 2.09765 13.8193 1.8629 13.8202V13.8202Z"
+													fill="white"
+												/>
+											</svg>
+										</button>
+										<svg
+											width="170"
+											height="37"
+											viewBox="0 0 170 37"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M2.36963 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M63.4731 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M98.3896 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M133.306 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M168.223 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M19.8276 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M46.0151 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M80.9316 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M115.848 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M150.764 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M11.0986 1.68213L11.0986 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M54.7441 1.68213L54.7441 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M89.6606 1.68213L89.6606 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M124.577 1.68213L124.577 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M159.493 1.68213L159.493 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M28.5566 8.47144L28.5566 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M37.2861 8.47144L37.2861 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M72.2021 8.47144L72.2021 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M107.119 8.47144L107.119 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M142.035 8.47144L142.035 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="right">
+										<span>02:21</span>
+										<span>Quirky, Fun, Happy</span>
+									</div>
+								</div>
+								<div class="media">
+									<div class="left">
+										<div class="photo">
+											<img src="./assets/images/profile-image-3.png" alt="" />
+										</div>
+										<div class="details">
+											<div class="top">Going Shoping again(..</div>
+											<div class="bottom">Dresdeon, the casamigos</div>
+										</div>
+									</div>
+									<div class="center">
+										<button>
+											<svg
+												width="13"
+												height="14"
+												viewBox="0 0 13 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.8629 13.8202C1.63869 13.8198 1.41844 13.761 1.22383 13.6496C0.785611 13.4013 0.513184 12.9193 0.513184 12.396V1.80563C0.513184 1.28086 0.785611 0.800278 1.22383 0.551953C1.42308 0.437445 1.64942 0.378558 1.87921 0.381449C2.109 0.38434 2.33379 0.448902 2.5301 0.568386L11.5812 5.98626C11.7698 6.10454 11.9253 6.26879 12.0331 6.4636C12.1409 6.65842 12.1974 6.87742 12.1974 7.10007C12.1974 7.32272 12.1409 7.54172 12.0331 7.73653C11.9253 7.93135 11.7698 8.0956 11.5812 8.21388L2.52863 13.6332C2.32774 13.7547 2.09765 13.8193 1.8629 13.8202V13.8202Z"
+													fill="white"
+												/>
+											</svg>
+										</button>
+										<svg
+											width="170"
+											height="37"
+											viewBox="0 0 170 37"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M2.36963 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M63.4731 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M98.3896 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M133.306 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M168.223 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M19.8276 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M46.0151 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M80.9316 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M115.848 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M150.764 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M11.0986 1.68213L11.0986 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M54.7441 1.68213L54.7441 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M89.6606 1.68213L89.6606 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M124.577 1.68213L124.577 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M159.493 1.68213L159.493 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M28.5566 8.47144L28.5566 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M37.2861 8.47144L37.2861 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M72.2021 8.47144L72.2021 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M107.119 8.47144L107.119 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M142.035 8.47144L142.035 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="right">
+										<span>02:21</span>
+										<span>Quirky, Fun, Happy</span>
+									</div>
+								</div>
+								<div class="media">
+									<div class="left">
+										<div class="photo">
+											<img src="./assets/images/profile-image-3.png" alt="" />
+										</div>
+										<div class="details">
+											<div class="top">Going Shoping again(..</div>
+											<div class="bottom">Dresdeon, the casamigos</div>
+										</div>
+									</div>
+									<div class="center">
+										<button>
+											<svg
+												width="13"
+												height="14"
+												viewBox="0 0 13 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.8629 13.8202C1.63869 13.8198 1.41844 13.761 1.22383 13.6496C0.785611 13.4013 0.513184 12.9193 0.513184 12.396V1.80563C0.513184 1.28086 0.785611 0.800278 1.22383 0.551953C1.42308 0.437445 1.64942 0.378558 1.87921 0.381449C2.109 0.38434 2.33379 0.448902 2.5301 0.568386L11.5812 5.98626C11.7698 6.10454 11.9253 6.26879 12.0331 6.4636C12.1409 6.65842 12.1974 6.87742 12.1974 7.10007C12.1974 7.32272 12.1409 7.54172 12.0331 7.73653C11.9253 7.93135 11.7698 8.0956 11.5812 8.21388L2.52863 13.6332C2.32774 13.7547 2.09765 13.8193 1.8629 13.8202V13.8202Z"
+													fill="white"
+												/>
+											</svg>
+										</button>
+										<svg
+											width="170"
+											height="37"
+											viewBox="0 0 170 37"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M2.36963 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M63.4731 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M98.3896 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M133.306 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M168.223 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M19.8276 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M46.0151 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M80.9316 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M115.848 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M150.764 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M11.0986 1.68213L11.0986 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M54.7441 1.68213L54.7441 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M89.6606 1.68213L89.6606 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M124.577 1.68213L124.577 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M159.493 1.68213L159.493 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M28.5566 8.47144L28.5566 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M37.2861 8.47144L37.2861 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M72.2021 8.47144L72.2021 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M107.119 8.47144L107.119 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M142.035 8.47144L142.035 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="right">
+										<span>02:21</span>
+										<span>Quirky, Fun, Happy</span>
+									</div>
+								</div>
+								<div class="media">
+									<div class="left">
+										<div class="photo">
+											<img src="./assets/images/profile-image-3.png" alt="" />
+										</div>
+										<div class="details">
+											<div class="top">Going Shoping again(..</div>
+											<div class="bottom">Dresdeon, the casamigos</div>
+										</div>
+									</div>
+									<div class="center">
+										<button>
+											<svg
+												width="13"
+												height="14"
+												viewBox="0 0 13 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.8629 13.8202C1.63869 13.8198 1.41844 13.761 1.22383 13.6496C0.785611 13.4013 0.513184 12.9193 0.513184 12.396V1.80563C0.513184 1.28086 0.785611 0.800278 1.22383 0.551953C1.42308 0.437445 1.64942 0.378558 1.87921 0.381449C2.109 0.38434 2.33379 0.448902 2.5301 0.568386L11.5812 5.98626C11.7698 6.10454 11.9253 6.26879 12.0331 6.4636C12.1409 6.65842 12.1974 6.87742 12.1974 7.10007C12.1974 7.32272 12.1409 7.54172 12.0331 7.73653C11.9253 7.93135 11.7698 8.0956 11.5812 8.21388L2.52863 13.6332C2.32774 13.7547 2.09765 13.8193 1.8629 13.8202V13.8202Z"
+													fill="white"
+												/>
+											</svg>
+										</button>
+										<svg
+											width="170"
+											height="37"
+											viewBox="0 0 170 37"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M2.36963 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M63.4731 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M98.3896 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M133.306 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M168.223 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M19.8276 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M46.0151 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M80.9316 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M115.848 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M150.764 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M11.0986 1.68213L11.0986 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M54.7441 1.68213L54.7441 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M89.6606 1.68213L89.6606 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M124.577 1.68213L124.577 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M159.493 1.68213L159.493 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M28.5566 8.47144L28.5566 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M37.2861 8.47144L37.2861 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M72.2021 8.47144L72.2021 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M107.119 8.47144L107.119 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M142.035 8.47144L142.035 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="right">
+										<span>02:21</span>
+										<span>Quirky, Fun, Happy</span>
+									</div>
+								</div>
+								<div class="media">
+									<div class="left">
+										<div class="photo">
+											<img src="./assets/images/profile-image-3.png" alt="" />
+										</div>
+										<div class="details">
+											<div class="top">Going Shoping again(..</div>
+											<div class="bottom">Dresdeon, the casamigos</div>
+										</div>
+									</div>
+									<div class="center">
+										<button>
+											<svg
+												width="13"
+												height="14"
+												viewBox="0 0 13 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.8629 13.8202C1.63869 13.8198 1.41844 13.761 1.22383 13.6496C0.785611 13.4013 0.513184 12.9193 0.513184 12.396V1.80563C0.513184 1.28086 0.785611 0.800278 1.22383 0.551953C1.42308 0.437445 1.64942 0.378558 1.87921 0.381449C2.109 0.38434 2.33379 0.448902 2.5301 0.568386L11.5812 5.98626C11.7698 6.10454 11.9253 6.26879 12.0331 6.4636C12.1409 6.65842 12.1974 6.87742 12.1974 7.10007C12.1974 7.32272 12.1409 7.54172 12.0331 7.73653C11.9253 7.93135 11.7698 8.0956 11.5812 8.21388L2.52863 13.6332C2.32774 13.7547 2.09765 13.8193 1.8629 13.8202V13.8202Z"
+													fill="white"
+												/>
+											</svg>
+										</button>
+										<svg
+											width="170"
+											height="37"
+											viewBox="0 0 170 37"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M2.36963 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M63.4731 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M98.3896 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M133.306 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M168.223 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M19.8276 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M46.0151 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M80.9316 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M115.848 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M150.764 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M11.0986 1.68213L11.0986 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M54.7441 1.68213L54.7441 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M89.6606 1.68213L89.6606 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M124.577 1.68213L124.577 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M159.493 1.68213L159.493 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M28.5566 8.47144L28.5566 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M37.2861 8.47144L37.2861 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M72.2021 8.47144L72.2021 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M107.119 8.47144L107.119 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M142.035 8.47144L142.035 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="right">
+										<span>02:21</span>
+										<span>Quirky, Fun, Happy</span>
+									</div>
+								</div>
+								<div class="media">
+									<div class="left">
+										<div class="photo">
+											<img src="./assets/images/profile-image-3.png" alt="" />
+										</div>
+										<div class="details">
+											<div class="top">Going Shoping again(..</div>
+											<div class="bottom">Dresdeon, the casamigos</div>
+										</div>
+									</div>
+									<div class="center">
+										<button>
+											<svg
+												width="13"
+												height="14"
+												viewBox="0 0 13 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.8629 13.8202C1.63869 13.8198 1.41844 13.761 1.22383 13.6496C0.785611 13.4013 0.513184 12.9193 0.513184 12.396V1.80563C0.513184 1.28086 0.785611 0.800278 1.22383 0.551953C1.42308 0.437445 1.64942 0.378558 1.87921 0.381449C2.109 0.38434 2.33379 0.448902 2.5301 0.568386L11.5812 5.98626C11.7698 6.10454 11.9253 6.26879 12.0331 6.4636C12.1409 6.65842 12.1974 6.87742 12.1974 7.10007C12.1974 7.32272 12.1409 7.54172 12.0331 7.73653C11.9253 7.93135 11.7698 8.0956 11.5812 8.21388L2.52863 13.6332C2.32774 13.7547 2.09765 13.8193 1.8629 13.8202V13.8202Z"
+													fill="white"
+												/>
+											</svg>
+										</button>
+										<svg
+											width="170"
+											height="37"
+											viewBox="0 0 170 37"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M2.36963 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M63.4731 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M98.3896 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M133.306 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M168.223 8.47144V27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M19.8276 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M46.0151 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M80.9316 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M115.848 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M150.764 12.3511V23.9899"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M11.0986 1.68213L11.0986 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M54.7441 1.68213L54.7441 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M89.6606 1.68213L89.6606 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M124.577 1.68213L124.577 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M159.493 1.68213L159.493 34.6587"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M28.5566 8.47144L28.5566 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M37.2861 8.47144L37.2861 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M72.2021 8.47144L72.2021 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M107.119 8.47144L107.119 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M142.035 8.47144L142.035 27.8694"
+												stroke="#444761"
+												stroke-width="2.9097"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="right">
+										<span>02:21</span>
+										<span>Quirky, Fun, Happy</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cta">
+					<div class="cta_buttons">
+						<button class="clear">Clear Selected</button>
+						<button class="add">
+							<svg
+								width="34"
+								height="34"
+								viewBox="0 0 34 34"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M30 0H3.6C1.608 0 0 1.608 0 3.6V30C0 31.992 1.608 33.6 3.6 33.6H30C31.992 33.6 33.6 31.992 33.6 30V3.6C33.6 1.608 31.992 0 30 0ZM14.4 26.4H4.8V22.8H14.4V26.4ZM21.6 18.6H12V15H21.6V18.6ZM28.8 10.8H19.2V7.2H28.8V10.8Z"
+									fill="white"
+								/>
+							</svg>
+							Add To Timeline
+						</button>
+					</div>
+				</div>
+			</div>
 		</section>
 	</body>
 	<script
