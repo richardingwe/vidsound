@@ -1321,7 +1321,7 @@ section.convert_container .center .left .controls .top > .time {
   font-size: 14.1661px;
   line-height: 13px;
   color: var(--dark);
-  margin-left: 30px;
+  margin-left: max(0%, 0px);
 }
 section.convert_container .center .left .controls .top .options {
   background: var(--light_blue);

@@ -1221,7 +1221,7 @@ section.convert_container {
 						font-size: 14.1661px;
 						line-height: 13px;
 						color: var(--dark);
-						margin-left: 30px;
+						margin-left: max(0%, 0px);
 					}
 
 					.options {
