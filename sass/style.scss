@@ -601,6 +601,7 @@ section.nav_main {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 46px;
+	gap: 15px;
 
 	nav {
 		width: 15%;
@@ -906,7 +907,7 @@ section.audio_blog {
 		h1.title {
 			font-style: normal;
 			font-weight: 600;
-			font-size: 32px;
+			font-size: 28px;
 			line-height: 48px;
 			color: var(--white);
 			margin-top: 38px;
@@ -916,7 +917,7 @@ section.audio_blog {
 		p.paragraph {
 			font-style: normal;
 			font-weight: 400;
-			font-size: 20px;
+			font-size: 16px;
 			line-height: 35px;
 			color: var(--dark);
 		}
@@ -1364,6 +1365,23 @@ section.convert_container {
 						margin-right: 8px;
 					}
 				}
+			}
+		}
+
+		@media screen and (max-width: 1400px) {
+			.left {
+				padding: 20px;
+			}
+		}
+
+		.video_play {
+			padding-left: 0;
+		}
+
+		@media screen and (max-width: 1200px) {
+			.video_play {
+				margin-top: 10px;
+				padding-left: 10px !important;
 			}
 		}
 

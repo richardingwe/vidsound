@@ -650,6 +650,7 @@ section.nav_main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 46px;
+  gap: 15px;
 }
 section.nav_main nav {
   width: 15%;
@@ -977,7 +978,7 @@ section.audio_blog .blog_post .author .right .time_listen .listen {
 section.audio_blog .blog_post h1.title {
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 48px;
   color: var(--white);
   margin-top: 38px;
@@ -986,7 +987,7 @@ section.audio_blog .blog_post h1.title {
 section.audio_blog .blog_post p.paragraph {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 35px;
   color: var(--dark);
 }
@@ -1479,6 +1480,20 @@ section.convert_container .center .left .add_a_block_container > button {
 }
 section.convert_container .center .left .add_a_block_container > button svg {
   margin-right: 8px;
+}
+@media screen and (max-width: 1400px) {
+  section.convert_container .center .left {
+    padding: 20px;
+  }
+}
+section.convert_container .center .video_play {
+  padding-left: 0;
+}
+@media screen and (max-width: 1200px) {
+  section.convert_container .center .video_play {
+    margin-top: 10px;
+    padding-left: 10px !important;
+  }
 }
 section.convert_container .center .right {
   background: var(--light_blue);
